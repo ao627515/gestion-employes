@@ -7,4 +7,3 @@ router.post('/', departmentController.createDepartment);
 router.get('/', departmentController.getDepartments);
 
 module.exports = router;
-s

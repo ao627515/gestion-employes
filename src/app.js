@@ -18,10 +18,7 @@ app.use('/employees', employeeRoutes);
 app.use('/departments', departmentRoutes);
 
 // Connexion à MongoDB
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log('Connecté à MongoDB');
     app.listen(PORT, () => {
