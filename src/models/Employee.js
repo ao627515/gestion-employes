@@ -2,8 +2,8 @@
 const mongoose = require('mongoose');
 
 const EmployeeSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
+  lastname: { type: String, required: true },
+  fistname: { type: String, required: true, unique: true },
   // Référence au département
   department: { type: mongoose.Schema.Types.ObjectId, ref: 'Department', required: true }
 });
