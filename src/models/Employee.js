@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const EmployeeSchema = new mongoose.Schema({
   lastname: { type: String, required: true },
-  fistname: { type: String, required: true, unique: true },
+  firstname: { type: String, required: true },
   // Référence au département
   department: { type: mongoose.Schema.Types.ObjectId, ref: 'Department', required: true }
 });
