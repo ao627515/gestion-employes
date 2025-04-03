@@ -28,7 +28,7 @@ docker compose up
 npm install
 
 # Lancer le serveur
-npm start
+npm run dev
 ```
 
 ## Configuration
